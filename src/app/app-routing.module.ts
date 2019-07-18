@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { HomeComponent } from './components/home/home.component';
+import { NewsComponent } from './components/news/news.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -16,5 +17,6 @@ export class AppRoutingModule { }
 
 export const RoutingComponents = [
   HomeComponent,
-  NotFoundComponent
+  NotFoundComponent,
+  NewsComponent
 ];
