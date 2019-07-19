@@ -1,1 +1,7 @@
-<p>home works!</p>
+<h1 class="last-news-title">{{ title }}</h1>
+<bit-of-news 
+  *ngFor="let bitOfNews of newsService.lastNews" 
+  [bitOfNews]="bitOfNews" 
+  [ngClass]="{'huge': bitOfNews == newsService.lastNews[0]}" 
+>
+</bit-of-news>

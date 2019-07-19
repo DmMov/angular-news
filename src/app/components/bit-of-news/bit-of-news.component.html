@@ -1,1 +1,11 @@
-<p>bit-of-news works!</p>
+<section class="image-section">
+  <img class="image-body" [src]="bitOfNews.imageUrl" />
+</section>
+<section class="info-section">
+  <h1 class="bit-title">{{ bitOfNews.title }}</h1>
+  <p class="bit-body">{{ bitOfNews.body }}</p>
+  <p class="bit-date">
+    <fa-icon class="bit-date-icon" [icon]="['far', 'clock']"></fa-icon> 
+    <span class="bit-date-value"> {{ bitOfNews.date }}</span>
+  </p>
+</section>

@@ -13,7 +13,7 @@ export class NewsService {
 
   constructor(private http: HttpClient) { }
 
-  Get = (setProp: string, limit?: string, search?: string): void => {
+  Get = (setProp: string, limit: number = 0, search: string = ''): void => {
     const optional = `?limit=${limit}&search=${search}`;
     this.http
       .get(newsUrl + optional)
